@@ -17,6 +17,15 @@ color:#FFFFFF;
 line-height:1.6;
 }
 
+}
+
+body > *{
+
+position:relative;
+
+z-index:2;
+
+}
 
 /* HERO */
 
@@ -48,7 +57,7 @@ padding:20px;
 
 .logo{
 
-font-size:64px;
+font-size:128px;
 
 letter-spacing:5px;
 
@@ -468,12 +477,3 @@ opacity:0.08;
 
 z-index:1;
 
-}
-
-body > *{
-
-position:relative;
-
-z-index:2;
-
-}
