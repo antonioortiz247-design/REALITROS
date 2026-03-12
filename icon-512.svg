@@ -1,0 +1,6 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="96" fill="#0B0B0B"/>
+  <circle cx="256" cy="256" r="184" fill="#141414" stroke="#D4AF37" stroke-opacity="0.45" stroke-width="2"/>
+  <path d="M256 136c26 30 36 60 36 92 0 22-8 42-19 59 15 10 27 25 35 43l-52-18-52 18c8-18 20-33 35-43-11-17-19-37-19-59 0-32 10-62 36-92z" fill="#D4AF37"/>
+  <text x="256" y="430" fill="#FF6A00" text-anchor="middle" font-size="48" font-family="Arial">REALITROS</text>
+</svg>
