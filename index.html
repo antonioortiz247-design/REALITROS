@@ -4,152 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>REALITROS | Experiencias en litro</title>
-  <meta name="description" content="REALITROS: premium michelada experience con vibra urbana, litros intensos y noches inolvidables." />
-  <meta name="keywords" content="REALITROS,micheladas,premium,bar,nightlife,litros" />
-  <meta name="theme-color" content="#0B0B0B" />
+  <meta name="description" content="REALITROS, marca premium de micheladas urbanas: experiencias en litro, menú, eventos y pedidos por WhatsApp." />
   <meta property="og:title" content="REALITROS – Experiencias en litro" />
-  <meta property="og:description" content="Descubre el sabor premium de REALITROS: productos, galería, atmósfera e información de ubicación." />
-  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Sitio oficial REALITROS: menú dinámico, galería, eventos, blog y contacto." />
   <meta property="og:image" content="logo.png" />
-  <meta property="og:locale" content="es_MX" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0B0B0B" />
   <link rel="manifest" href="manifest.json" />
-  <link rel="apple-touch-icon" href="logo.png" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav-wrap">
-      <a class="brand" href="#inicio">REALITROS</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú de navegación">☰</button>
-      <nav id="site-nav" class="site-nav" aria-label="Principal">
-        <a href="#productos">Productos</a>
-        <a href="#galeria">Galería</a>
-        <a href="#atmosfera">Atmósfera</a>
-        <a href="#ubicacion">Ubicación</a>
-      </nav>
-    </div>
-  </header>
-
-  <header class="hero" id="inicio">
-    <div class="hero-overlay"></div>
-    <div class="hero-content container">
-      <p class="eyebrow">Premium Michelada Experience</p>
-      <h1 class="logo">REALITROS</h1>
-      <img src="logo.png" class="hero-logo" alt="Logo de REALITROS" fetchpriority="high" />
-      <p class="tagline">REALITROS – Experiencias en litro</p>
-      <div class="buttons">
-        <a class="btn primary" href="#ubicacion">Ver ubicación</a>
-        <a class="btn outline" href="https://wa.me/525657038871" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a>
-        <button id="installBtn" class="btn install-btn" type="button" hidden>Instalar app</button>
-      </div>
-    </div>
-  </header>
+  <header class="topbar"><div class="container nav-row"><a class="brand" href="index.html">REALITROS</a><button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">☰</button><nav id="site-nav" class="site-nav"><a class="active" href="index.html">Inicio</a><a href="experiencia.html">Experiencia</a><a href="menu.html">Menú</a><a href="galeria.html">Galería</a><a href="eventos.html">Eventos</a><a href="blog.html">Blog</a><a href="contacto.html">Contacto</a></nav></div></header>
 
   <main>
-    <section class="experiencia reveal" id="historia">
-      <div class="container split">
+    <section class="hero section">
+      <div class="container hero-grid reveal">
         <div>
-          <h2>Nuestra historia</h2>
-          <p>REALITROS nace para romper lo tradicional. Litros bien servidos, mezclas intensas y una estética premium inspirada en la vida nocturna urbana.</p>
+          <p class="eyebrow">Premium nightlife michelada brand</p>
+          <h1 class="gradient-title">REALITROS – Experiencias en litro</h1>
+          <p class="lead">Concepto premium con estética urbana, mezcla bold y ritual social para noches memorables.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="menu.html">Ordenar ahora</a>
+            <a class="btn btn-outline" href="experiencia.html">Conocer la marca</a>
+            <button class="btn btn-gold js-install" hidden>Instalar app</button>
+          </div>
         </div>
-        <div class="panel">
-          <h3>Manifiesto</h3>
-          <p>Sabor audaz, presentación impecable y experiencias memorables en cada ronda. Aquí la noche se bebe en grande.</p>
-        </div>
+        <div><img class="logo-lockup" src="logo.png" alt="Logo REALITROS" fetchpriority="high" /></div>
       </div>
     </section>
 
-    <section class="productos reveal" id="productos">
-      <div class="container">
-        <h2>Nuestros productos</h2>
-        <div class="grid">
-          <article class="card"><h3>Litros Clásicos</h3><p>Base cerveza preparada al nivel que tú elijas.</p></article>
-          <article class="card"><h3>Especialidades</h3><p>Mezclas exclusivas con ingredientes premium.</p></article>
-          <article class="card"><h3>Ediciones Especiales</h3><p>Sabores de temporada y colaboraciones únicas.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="galeria reveal" id="galeria">
-      <div class="container">
-        <h2>Galería REALITROS</h2>
-        <div class="galeria-grid">
-          <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Bebidas premium en barra nocturna" loading="lazy" />
-          <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=80" alt="Michelada con escarchado y luz cálida" loading="lazy" />
-          <img src="https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&w=900&q=80" alt="Ambiente de bar urbano premium" loading="lazy" />
-          <img src="https://images.unsplash.com/photo-1525268323446-0505b6fe7778?auto=format&fit=crop&w=900&q=80" alt="Coctelería servida en evento nocturno" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <section class="menu reveal" id="menu">
-      <div class="container">
-        <h2>Nuestros litros</h2>
-        <div class="menu-grid">
-          <article class="menu-item"><h3>Litro Clásico</h3><p>Michelada tradicional preparada.</p></article>
-          <article class="menu-item"><h3>Litro Tamarindo</h3><p>Mezcla especial con toque dulce y picante.</p></article>
-          <article class="menu-item"><h3>Litro Mango Fuego</h3><p>Sabor tropical intenso con chile.</p></article>
-          <article class="menu-item"><h3>Litro Especial REALITROS</h3><p>La mezcla insignia de la casa.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="atmosfera reveal" id="atmosfera">
-      <div class="container split">
+    <section class="section section-dark">
+      <div class="container split reveal">
         <div>
-          <h2>Experiencia &amp; atmósfera</h2>
-          <p>Luces cálidas, música urbana y un servicio que eleva cada momento. REALITROS fue diseñado para celebrar en grande.</p>
+          <h2>Una marca para elevar la noche</h2>
+          <p>REALITROS fusiona coctelería popular con una dirección visual premium. Cada litro está curado para performance, sabor y presencia.</p>
         </div>
-        <div class="panel">
-          <ul>
-            <li>🍺 Litros premium todo el año</li>
-            <li>🎵 Ambiente de nightlife auténtico</li>
-            <li>✨ Presentación bold y moderna</li>
-          </ul>
+        <div class="kpis">
+          <div class="kpi"><strong>30+</strong><p>Bebidas de autor</p></div>
+          <div class="kpi"><strong>100%</strong><p>Actitud urbana</p></div>
+          <div class="kpi"><strong>24/7</strong><p>Atención por WhatsApp</p></div>
         </div>
       </div>
     </section>
 
-    <section class="instagram reveal" id="instagram">
-      <div class="container">
-        <h2>Síguenos en Instagram</h2>
-        <p>@realitros</p>
-        <a class="btn primary" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Ver Instagram</a>
-      </div>
-    </section>
-
-    <section id="ubicacion" class="ubicacion reveal">
-      <div class="container">
-        <h2>Ubicación</h2>
-        <p>Próximamente dirección oficial. Reserva tu mesa y vive la experiencia REALITROS.</p>
-        <div class="map-placeholder" role="img" aria-label="Mapa de ubicación próximamente disponible"><span>Mapa interactivo próximamente</span></div>
-        <a class="btn primary" href="https://wa.me/525657038871" target="_blank" rel="noopener noreferrer">Contactar por WhatsApp</a>
+    <section class="section section-soft">
+      <div class="container reveal">
+        <h2>Explora el universo REALITROS</h2>
+        <div class="cards-grid">
+          <article class="card"><h3>Menú dinámico</h3><p>Descubre bebidas por categoría y crea tu pedido.</p><a class="btn btn-outline" href="menu.html">Ver menú</a></article>
+          <article class="card"><h3>Eventos privados</h3><p>Llevamos la experiencia premium a tu evento.</p><a class="btn btn-outline" href="eventos.html">Cotizar evento</a></article>
+          <article class="card"><h3>Contenido editorial</h3><p>Historias, cultura y tendencias de nightlife.</p><a class="btn btn-outline" href="blog.html">Ir al blog</a></article>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="premium-footer">
-    <div class="container footer-grid">
-      <div>
-        <h3>REALITROS</h3>
-        <p>Síguenos. Vive REALITROS.</p>
-      </div>
-      <div>
-        <p class="footer-title">Navegación</p>
-        <a href="#productos">Productos</a>
-        <a href="#galeria">Galería</a>
-        <a href="#ubicacion">Ubicación</a>
-      </div>
-      <div>
-        <p class="footer-title">Contacto</p>
-        <a href="https://wa.me/525657038871" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-        <a href="#instagram">Instagram</a>
-      </div>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/525657038871" class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp de REALITROS">WhatsApp</a>
-
+  <footer class="footer"><div class="container footer-grid"><div><h3>REALITROS</h3><p>Experiencias en litro.</p></div><div><a href="menu.html">Menú</a><a href="galeria.html">Galería</a></div><div><a href="contacto.html">Contacto</a><p>© <span data-year></span></p></div></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/525657038871" target="_blank" rel="noopener">WhatsApp</a>
   <script src="script.js" defer></script>
 </body>
 </html>
