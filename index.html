@@ -4,33 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>REALITROS | Experiencias en litro</title>
-  <meta
-    name="description"
-    content="REALITROS: premium michelada experience con vibra urbana, litros intensos y noches inolvidables."
-  />
+  <meta name="description" content="REALITROS: premium michelada experience con vibra urbana, litros intensos y noches inolvidables." />
   <meta name="keywords" content="REALITROS,micheladas,premium,bar,nightlife,litros" />
   <meta name="theme-color" content="#0B0B0B" />
   <meta property="og:title" content="REALITROS – Experiencias en litro" />
-  <meta
-    property="og:description"
-    content="Descubre el sabor premium de REALITROS: productos, galería, atmósfera e información de ubicación."
-  />
+  <meta property="og:description" content="Descubre el sabor premium de REALITROS: productos, galería, atmósfera e información de ubicación." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="logo.png" />
   <meta property="og:locale" content="es_MX" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="logo.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio">REALITROS</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú de navegación">☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Principal">
+        <a href="#productos">Productos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#atmosfera">Atmósfera</a>
+        <a href="#ubicacion">Ubicación</a>
+      </nav>
+    </div>
+  </header>
+
   <header class="hero" id="inicio">
     <div class="hero-overlay"></div>
     <div class="hero-content container">
       <p class="eyebrow">Premium Michelada Experience</p>
       <h1 class="logo">REALITROS</h1>
-      <img src="logo.png" class="hero-logo" alt="Logo de REALITROS" />
+      <img src="logo.png" class="hero-logo" alt="Logo de REALITROS" fetchpriority="high" />
       <p class="tagline">REALITROS – Experiencias en litro</p>
       <div class="buttons">
         <a class="btn primary" href="#ubicacion">Ver ubicación</a>
         <a class="btn outline" href="https://wa.me/525657038871" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a>
+        <button id="installBtn" class="btn install-btn" type="button" hidden>Instalar app</button>
       </div>
     </div>
   </header>
@@ -40,18 +50,11 @@
       <div class="container split">
         <div>
           <h2>Nuestra historia</h2>
-          <p>
-            REALITROS nace para romper lo tradicional. Litros bien servidos,
-            mezclas intensas y una estética premium inspirada en la vida nocturna
-            urbana.
-          </p>
+          <p>REALITROS nace para romper lo tradicional. Litros bien servidos, mezclas intensas y una estética premium inspirada en la vida nocturna urbana.</p>
         </div>
         <div class="panel">
           <h3>Manifiesto</h3>
-          <p>
-            Sabor audaz, presentación impecable y experiencias memorables en cada
-            ronda. Aquí la noche se bebe en grande.
-          </p>
+          <p>Sabor audaz, presentación impecable y experiencias memorables en cada ronda. Aquí la noche se bebe en grande.</p>
         </div>
       </div>
     </section>
@@ -60,18 +63,9 @@
       <div class="container">
         <h2>Nuestros productos</h2>
         <div class="grid">
-          <article class="card">
-            <h3>Litros Clásicos</h3>
-            <p>Base cerveza preparada al nivel que tú elijas.</p>
-          </article>
-          <article class="card">
-            <h3>Especialidades</h3>
-            <p>Mezclas exclusivas con ingredientes premium.</p>
-          </article>
-          <article class="card">
-            <h3>Ediciones Especiales</h3>
-            <p>Sabores de temporada y colaboraciones únicas.</p>
-          </article>
+          <article class="card"><h3>Litros Clásicos</h3><p>Base cerveza preparada al nivel que tú elijas.</p></article>
+          <article class="card"><h3>Especialidades</h3><p>Mezclas exclusivas con ingredientes premium.</p></article>
+          <article class="card"><h3>Ediciones Especiales</h3><p>Sabores de temporada y colaboraciones únicas.</p></article>
         </div>
       </div>
     </section>
@@ -92,22 +86,10 @@
       <div class="container">
         <h2>Nuestros litros</h2>
         <div class="menu-grid">
-          <article class="menu-item">
-            <h3>Litro Clásico</h3>
-            <p>Michelada tradicional preparada.</p>
-          </article>
-          <article class="menu-item">
-            <h3>Litro Tamarindo</h3>
-            <p>Mezcla especial con toque dulce y picante.</p>
-          </article>
-          <article class="menu-item">
-            <h3>Litro Mango Fuego</h3>
-            <p>Sabor tropical intenso con chile.</p>
-          </article>
-          <article class="menu-item">
-            <h3>Litro Especial REALITROS</h3>
-            <p>La mezcla insignia de la casa.</p>
-          </article>
+          <article class="menu-item"><h3>Litro Clásico</h3><p>Michelada tradicional preparada.</p></article>
+          <article class="menu-item"><h3>Litro Tamarindo</h3><p>Mezcla especial con toque dulce y picante.</p></article>
+          <article class="menu-item"><h3>Litro Mango Fuego</h3><p>Sabor tropical intenso con chile.</p></article>
+          <article class="menu-item"><h3>Litro Especial REALITROS</h3><p>La mezcla insignia de la casa.</p></article>
         </div>
       </div>
     </section>
@@ -116,10 +98,7 @@
       <div class="container split">
         <div>
           <h2>Experiencia &amp; atmósfera</h2>
-          <p>
-            Luces cálidas, música urbana y un servicio que eleva cada momento.
-            REALITROS fue diseñado para celebrar en grande.
-          </p>
+          <p>Luces cálidas, música urbana y un servicio que eleva cada momento. REALITROS fue diseñado para celebrar en grande.</p>
         </div>
         <div class="panel">
           <ul>
@@ -143,9 +122,7 @@
       <div class="container">
         <h2>Ubicación</h2>
         <p>Próximamente dirección oficial. Reserva tu mesa y vive la experiencia REALITROS.</p>
-        <div class="map-placeholder" role="img" aria-label="Mapa de ubicación próximamente disponible">
-          <span>Mapa interactivo próximamente</span>
-        </div>
+        <div class="map-placeholder" role="img" aria-label="Mapa de ubicación próximamente disponible"><span>Mapa interactivo próximamente</span></div>
         <a class="btn primary" href="https://wa.me/525657038871" target="_blank" rel="noopener noreferrer">Contactar por WhatsApp</a>
       </div>
     </section>
@@ -171,9 +148,7 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/525657038871" class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp de REALITROS">
-    WhatsApp
-  </a>
+  <a href="https://wa.me/525657038871" class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp de REALITROS">WhatsApp</a>
 
   <script src="script.js" defer></script>
 </body>

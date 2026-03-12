@@ -347,3 +347,94 @@ section {
     grid-template-columns: 2fr 1fr 1fr;
   }
 }
+
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  backdrop-filter: blur(10px);
+  background: rgba(11, 11, 11, 0.75);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 62px;
+}
+
+.brand {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.08rem;
+}
+
+.nav-toggle {
+  background: rgba(255, 106, 0, 0.15);
+  color: var(--white);
+  border: 1px solid rgba(255, 106, 0, 0.45);
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  font-size: 1.2rem;
+}
+
+.site-nav {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  right: 0;
+  padding: 0.8rem 4%;
+  background: rgba(11, 11, 11, 0.96);
+  display: grid;
+  gap: 0.5rem;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+.site-nav.is-open {
+  transform: scaleY(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.site-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.55rem 0.4rem;
+  border-radius: 8px;
+}
+
+.site-nav a:hover {
+  color: var(--gold);
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.install-btn {
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--gold);
+  border: 1px solid rgba(212, 175, 55, 0.55);
+}
+
+@media (min-width: 900px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .site-nav {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    display: flex;
+    gap: 0.5rem;
+    background: transparent;
+    padding: 0;
+  }
+}
