@@ -121,6 +121,32 @@ p { color: var(--muted); }
 .section-soft { background: rgba(11,11,11,.85); }
 
 .filters { display: flex; flex-wrap: wrap; gap: .6rem; margin: .8rem 0 1.1rem; }
+
+.color-legend { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0 1.2rem; }
+.color-legend span { display: inline-flex; align-items: center; gap: .45rem; color: var(--muted); font-weight: 600; }
+.dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+.dot-citrico { background: #70d6ff; }
+.dot-frutal { background: #f78fb3; }
+.dot-especiado { background: #ff9f43; }
+.dot-signature { background: #c7a6ff; }
+
+.menu-card { border-color: rgba(255,255,255,.1); }
+.menu-tag { display: inline-flex; align-items: center; gap: .45rem; color: #ededed; font-size: .82rem; letter-spacing: .02em; text-transform: uppercase; }
+.menu-card .actions { margin-top: .8rem; }
+
+.menu-divider { border: none; border-top: 1px solid rgba(255,255,255,.15); margin: 1.1rem 0; }
+.builder-copy { font-size: .92rem; margin: .45rem 0 .75rem; }
+.builder-form { display: grid; gap: .65rem; }
+.builder-form label { display: grid; gap: .35rem; color: var(--muted); font-size: .93rem; }
+.builder-form select {
+  width: 100%;
+  background: #101010;
+  border: 1px solid rgba(212,175,55,.28);
+  color: var(--text);
+  border-radius: 10px;
+  padding: .65rem .7rem;
+}
+
 .search {
   width: 100%; max-width: 420px; background: #111; border: 1px solid rgba(212,175,55,.28); color: #fff;
   border-radius: 999px; padding: .8rem 1rem;
